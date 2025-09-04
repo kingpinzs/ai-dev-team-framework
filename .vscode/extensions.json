@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+
+    "figma.figma-vscode-extension",
+    "ms-vscode-remote.remote-containers",
+    "github.copilot",
+    "github.copilot-chat",
+    "github.vscode-github-actions",
+    "openai.chatgpt",
+
+  ]
+}
