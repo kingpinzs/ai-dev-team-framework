@@ -1,0 +1,18 @@
+{
+  "name": "Modular AI Team Framework",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "googlecloudtools.cloudcode",
+        "ms-vscode-remote.remote-containers",
+        "google.geminicodeassist",
+        "google.gemini-cli-vscode-ide-companion"
+      ]
+    }
+  },
+  // Commands run after container is created
+  "postCreateCommand": "npm i -g @google/gemini-cli && gemini config set auto_allow built-in && sleep 60 && mkdir -p .gemini/agents && ln -s .gemini/agents/project_manager.md GEMINI.md"
+}
